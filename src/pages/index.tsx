@@ -24,7 +24,16 @@ const HomePage = () => {
 
         try {
             const userResponse = await fetch(`https://api.github.com/users/${username}`);
-            if (!userResponse.ok) throw new Error('User not found');
+
+
+            if (userResponse.status === 403) {
+            const rateLimitResponse = await fetch('https://api.github.com/rate_limit');
+            const rateLimitData = await rateLimitResponse.json();
+            const resetTime = new Date(rateLimitData.rate.reset * 1000);
+            throw new Error( `Rate limit exceeded. Try again at ${resetTime.toLocaleTimeString()}.`);
+        } else if (!userResponse.ok) {
+            throw new Error('User not found');
+        }
             const user = await userResponse.json();
 
             // Fetch repositories for the first page
