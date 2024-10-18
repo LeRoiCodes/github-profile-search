@@ -79,7 +79,7 @@ const HomePage = () => {
         <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
             <header className="bg-blue-600 text-white p-4">
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-                    <div className="text-2xl font-bold mb-2 md:mb-0"><Image src="/logo2.png" alt='leRoi codes' width={50} height={50}/></div>
+                    <div className="text-2xl font-bold mb-2 md:mb-0"><Image src="/Logo2.png" alt='leRoi codes' width={50} height={50}/></div>
                     <h1 className="text-3xl text-center md:text-left">GitHub Profile Search</h1>
                     <ThemeToggle  />
                 </div>
