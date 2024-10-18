@@ -21,6 +21,8 @@ const HomePage = () => {
         setLoading(true);
         setError('');
         setUserData(null)
+        setRepos([])
+        setTotalCount(0)
         setCurrentPage(1); // Reset to first page on new search
 
         try {
