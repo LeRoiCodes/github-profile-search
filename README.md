@@ -14,7 +14,7 @@ A web application built with Next.js, TypeScript, and Tailwind CSS that allows u
 
 ## Bonus
 - **Loading and Error Handling**: Displays loading indicators and error messages for better user experience.
-- **Dynamic Routing**: Each user's profile can be accessed via a dynamic route (e.g., `/user/octocat`).
+- **Dynamic Routing**: Each user's profile can be accessed via a dynamic route (e.g., `/user/brandonarmand96`).
 
 ## Technologies Used
 
