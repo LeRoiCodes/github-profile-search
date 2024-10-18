@@ -20,6 +20,7 @@ const HomePage = () => {
     const handleSearch = async (username: string) => {
         setLoading(true);
         setError('');
+        setUserData(null)
         setCurrentPage(1); // Reset to first page on new search
 
         try {

@@ -33,6 +33,7 @@ const UserPage = () => {
     const fetchUserData = async (username: string) => {
         setLoading(true);
         setError('');
+        
         try {
             const userResponse = await fetch(`https://api.github.com/users/${username}`);
             if (userResponse.status === 403) {
